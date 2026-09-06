@@ -29,3 +29,20 @@ An end-to-end Data Engineering and Machine Learning project designed to extract 
    `pip install -r requirements.txt`
 3. Run the interactive AI simulator:
    `python simulator.py`
+
+## 📊 Data Visualization
+
+The initial Exploratory Data Analysis (EDA) confirms the real-world depreciation curve of the BMW 3 Series across different fuel types:
+
+![BMW Price vs Mileage Data Analysis](eda_plot.png)
+
+## 🎯 Real-World Accuracy Test
+
+To validate the model, we compared a live, unseen AutoScout24 listing against the CLI Simulator's prediction:
+
+| Real Market Listing | AI Simulator Prediction |
+| :---: | :---: |
+| <img src="real_listing.png" width="450"/> | <img src="ai_prediction.png" width="450"/> |
+
+**Result:** The actual price of the BMW 320e Hybrid is **€24,889**. The AI predicted **€24,461.94**. 
+With an error margin of just **~€427** (under 2%), the model demonstrates a highly accurate understanding of vehicle depreciation, feature weighting, and current market trends.
